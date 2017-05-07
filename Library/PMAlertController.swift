@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import FRHyperLabel
+import ActiveLabel
 
 @objc public enum PMAlertControllerStyle : Int {
     case alert // The alert will adopt a width of 270 (like UIAlertController).
@@ -24,7 +24,7 @@ import FRHyperLabel
     @IBOutlet weak open var headerViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak open var alertImage: UIImageView!
     @IBOutlet weak open var alertTitle: UILabel!
-    @IBOutlet weak open var alertDescription: FRHyperLabel!
+    @IBOutlet weak open var alertDescription: ActiveLabel!
     @IBOutlet weak open var alertActionStackView: UIStackView!
     @IBOutlet weak open var alertStackViewHeightConstraint: NSLayoutConstraint!
     open var ALERT_STACK_VIEW_HEIGHT : CGFloat = UIScreen.main.bounds.height < 568.0 ? 40 : 62 //if iphone 4 the stack_view_height is 40, else 62
