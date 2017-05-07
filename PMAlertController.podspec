@@ -18,4 +18,5 @@ Pod::Spec.new do |s|
   }
   s.framework  = "UIKit"
   s.requires_arc = true
+  s.dependency "FRHyperLabel", "1.0.3"
 end
